@@ -1,21 +1,21 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  user: 
+  user: one
   avatar_data: MyText
   first_name: MyString
   last_name: MyString
-  postcode: MyString
   dob: 2017-10-29
+  postcode: MyString
   sport_play: MyString
   sport_coach: MyString
 
 two:
-  user: 
+  user: two
   avatar_data: MyText
   first_name: MyString
   last_name: MyString
-  postcode: MyString
   dob: 2017-10-29
+  postcode: MyString
   sport_play: MyString
   sport_coach: MyString
