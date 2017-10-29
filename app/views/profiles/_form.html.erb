@@ -12,8 +12,8 @@
   <% end %>
 
   <div class="field">
-    <%= form.label :user %>
-    <%= form.text_field :user, id: :profile_user %>
+    <%= form.label :user_id %>
+    <%= form.text_field :user_id, id: :profile_user_id %>
   </div>
 
   <div class="field">
@@ -32,13 +32,13 @@
   </div>
 
   <div class="field">
-    <%= form.label :postcode %>
-    <%= form.text_field :postcode, id: :profile_postcode %>
+    <%= form.label :dob %>
+    <%= form.date_select :dob, id: :profile_dob %>
   </div>
 
   <div class="field">
-    <%= form.label :dob %>
-    <%= form.date_select :dob, id: :profile_dob %>
+    <%= form.label :postcode %>
+    <%= form.text_field :postcode, id: :profile_postcode %>
   </div>
 
   <div class="field">

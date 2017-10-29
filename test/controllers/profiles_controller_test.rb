@@ -17,7 +17,7 @@ class ProfilesControllerTest < ActionDispatch::IntegrationTest
 
   test "should create profile" do
     assert_difference('Profile.count') do
-      post profiles_url, params: { profile: { avatar_data: @profile.avatar_data, dob: @profile.dob, first_name: @profile.first_name, last_name: @profile.last_name, postcode: @profile.postcode, sport_coach: @profile.sport_coach, sport_play: @profile.sport_play, user: @profile.user } }
+      post profiles_url, params: { profile: { avatar_data: @profile.avatar_data, dob: @profile.dob, first_name: @profile.first_name, last_name: @profile.last_name, postcode: @profile.postcode, sport_coach: @profile.sport_coach, sport_play: @profile.sport_play, user_id: @profile.user_id } }
     end
 
     assert_redirected_to profile_url(Profile.last)
@@ -34,7 +34,7 @@ class ProfilesControllerTest < ActionDispatch::IntegrationTest
   end
 
   test "should update profile" do
-    patch profile_url(@profile), params: { profile: { avatar_data: @profile.avatar_data, dob: @profile.dob, first_name: @profile.first_name, last_name: @profile.last_name, postcode: @profile.postcode, sport_coach: @profile.sport_coach, sport_play: @profile.sport_play, user: @profile.user } }
+    patch profile_url(@profile), params: { profile: { avatar_data: @profile.avatar_data, dob: @profile.dob, first_name: @profile.first_name, last_name: @profile.last_name, postcode: @profile.postcode, sport_coach: @profile.sport_coach, sport_play: @profile.sport_play, user_id: @profile.user_id } }
     assert_redirected_to profile_url(@profile)
   end
 
